@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <head>
+        <title>Boolean blog</title>
+        <link rel="shortcut icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Boolean Wu Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
