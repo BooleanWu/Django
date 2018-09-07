@@ -1,5 +1,6 @@
 {% extends 'blog/base.html' %}
 
+
 {% block content %}
     <div class="post">
         {% if post.published_date %}
@@ -14,7 +15,8 @@
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <p>{{ post.text|linebreaksbr }}</p>
+            {% load markdown_deux_tags %}
+            {{ post.text| markdown }}
         {% endif %}
     </div>
 {% endblock %}
