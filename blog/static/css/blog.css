@@ -1,17 +1,29 @@
+body{
+    background: url("../../static/image/background.jpg");
+    background-size: cover;
+}
 .page-header {
-    background-color: #ff9400;
+    background-color: rgba(125, 125, 125, 0.5);
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: black;
     font-size: 36pt;
     text-decoration: none;
 }
+.top-title{
+    text-align: center;
+    left: 50%;
+    right: 50%;
+}
 
-.content {
-    margin-left: 40px;
+.blog-text{
+    background-color: rgba(255,255,255,0.7);
+    border-style: solid;
+    border-color:rgba(125, 125, 125, 0.5);
+    border-radius: 10px;
 }
 
 h1, h2, h3, h4 {
